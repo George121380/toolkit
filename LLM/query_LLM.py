@@ -19,7 +19,7 @@ LLM_MODEL = "deepseek"
 with open("query_log.txt", "w") as log_file:
     log_file.write("")
 
-def ask_GPT(system,content):
+def query_LLM(system,content):
     while True:
         try:
             if LLM_MODEL == "gpt-4o": # GPT-4o api
